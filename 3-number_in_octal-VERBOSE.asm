@@ -34,7 +34,7 @@ section .text
 ; Będziemy modyfikować liczbę 1 bajtową, czyli maksymalnie 3 cyfry
 
     oct:
-        mov al, bl      ;zapisujemy liczbę do bl, żeby jej nie nadpisać
+        mov bl, al      ;zapisujemy liczbę do bl, żeby jej nie nadpisać
 
         ;! PIERWSZA CYFRA OD LEWEJ
         shr al, 6       ;*przesuń wartość al o 6 w prawo (shift right)

@@ -14,7 +14,7 @@ section .text
     syscall
 
     oct:
-        mov al, bl      ;zapisujemy na później
+        mov bl, al      ;zapisujemy na później
 
         ;wydobywamy pierwsze 2 bity z lewej
         ;i zapisujemy je w buforze na pozycji 0
@@ -47,7 +47,7 @@ section .text
         mov rdx, 4
         syscall
 
-        ret
+    ret
 
 section .data
     x: db 0b01011100   ;liczba zapisana binarnie ( 0bLICZBA )
